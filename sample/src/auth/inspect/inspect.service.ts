@@ -1,5 +1,6 @@
 import { Inject, Injectable } from '@nestjs/common';
-import util, { InspectOptions } from 'util';
+import * as util from 'util';
+import { InspectOptions } from './inspect.interfaces';
 import { INSPECT_MODULE_OPTION } from './inspect.constants';
 
 @Injectable()
